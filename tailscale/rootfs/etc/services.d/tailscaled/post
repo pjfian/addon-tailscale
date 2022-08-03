@@ -51,6 +51,7 @@ do
   then
     IFS=","
     /opt/tailscale up \
+      --login-server 
       --hostname "$(bashio::info.hostname)" \
       --advertise-exit-node \
       --accept-routes \
